@@ -1,4 +1,4 @@
-package LinkedList.ReverseLinkedList;
+package LinkedList.HackerearthReverseLinkedList;
 
 
 public class LinkedList {
