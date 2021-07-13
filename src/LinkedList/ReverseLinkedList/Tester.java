@@ -9,10 +9,11 @@ public class Tester {
         int n= scanner.nextInt();
         LinkedList linkedList = new LinkedList();
         LinkedList.Node head = null;
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i <n; i++) {
             int num = scanner.nextInt();
             head=linkedList.insertAtTail(head,num);
         }
         linkedList.display(head);
+        linkedList.reverseNode(head);
     }
 }

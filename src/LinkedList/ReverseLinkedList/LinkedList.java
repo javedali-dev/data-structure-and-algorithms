@@ -13,10 +13,11 @@ public class LinkedList {
         }
     }
 
-    void insertAtHead(Node head,int data){
+    Node insertAtHead(Node head,int data){
         Node node = new Node(data);
         node.next = head;
         head=node;
+        return head;
     }
 
     Node insertAtTail(Node head, int data){
@@ -48,11 +49,11 @@ public class LinkedList {
             if((temp.data)%2==0){
                 Node newHead = null;
                 while(((temp.data%2)==0)&&(temp.next!=null)){
-                    insertAtHead(newHead,temp.data);
+                    newHead = insertAtHead(newHead,temp.data);
                     temp=temp.next;
                 }
                 if((temp.data)%2==0){
-                    insertAtHead(newHead,temp.data);
+                    newHead = insertAtHead(newHead,temp.data);
                 }
                 display(newHead);
             }
