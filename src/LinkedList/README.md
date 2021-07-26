@@ -53,3 +53,13 @@ This worked fine for you until you got a big client and you need to hire more em
 ![LinkedList](images/LinkedList.png)
 
 So LinkedList stores information in a Node. A Node is a collection of data and pointer point to the next Node. That it. Now if you look into your problem related to storing Employee information it seems like already solve. now you can hire as many employees as you can. And not worry about how to store them because you just need to insert a new Employee(Node) into the existing LinkedList. No more copying from one array to another.
+
+### 3. How does LinkedList Store data?
+
+As discuss above LinkedList stores data in a node. Every Node has two-part first part is data itself and send part a pointer that point to next similar node and sequence goes up to where the end node point to null. Before we discuss how LinkedList is store in computer memory let me introduce you to our friend "head".
+
+> Head is the pointer that points to the first Node of our LinkedList. why?
+
+Have you wondered what happens to the variable that goes out of scope? Those variables are [garbage collected](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)). Garbage collection is a concept introduce by many high-level languages to overcome memory leakage issues. under the hood, if a variable is not pointed by any of the pointers(referenced) then the variables are going to garbage collected. And we don't want our sweet Employee information to be garbage collected. So we need one reference(head) that points to the first node since the first node is pointing to the next node we don't need any extra reference that points to the next node.
+At the hardware level, A Node takes a chunk of heap memory and store data and pointers. Since every chunk of heap memory has to be referenced otherwise garbage collectors will come and collect all the memory that's why we need to head pointer. But we need to be careful because whoever has access to our head pointer can have access to all our Employee information. so we need to make it private(Access Specifier) so that other classes don't have access to it.
+
