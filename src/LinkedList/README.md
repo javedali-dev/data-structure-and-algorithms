@@ -1,6 +1,6 @@
 # Data Structure 101: LinkedList  
 
-![hero image](image/hero.jpg)
+![hero image](images/hero.jpg)
 
 ### Agenda
 
@@ -47,3 +47,7 @@ now you can access the employee with their id;
 ```
 
 This worked fine for you until you got a big client and you need to hire more employees. let say you have hired five people. because you are a good boss you need to store their information as well. Now you run into the problem. Initially, you only have 100 employees and you have created 100 indexes for your employee. A short and quick solution to this problem is to create a second array of size more than the first array(100+5) copy(expensive task) all the elements from the first array to the second array and you are good to go. until you got another big client and you need to hire some more employees. Now you understand the drawback of the array clearly, let see what LinkedList has to say about the same problem.
+
+### 2. What is LinkedList?
+
+![LinkedList](images/LinkedList.png)
