@@ -51,3 +51,5 @@ This worked fine for you until you got a big client and you need to hire more em
 ### 2. What is LinkedList?
 
 ![LinkedList](images/LinkedList.png)
+
+So LinkedList stores information in a Node. A Node is a collection of data and pointer point to the next Node. That it. Now if you look into your problem related to storing Employee information it seems like already solve. now you can hire as many employees as you can. And not worry about how to store them because you just need to insert a new Employee(Node) into the existing LinkedList. No more copying from one array to another.
