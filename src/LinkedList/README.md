@@ -17,6 +17,7 @@
 11. How does find() work?
 12. Conclusion
 
+---
 
 ### 1. Why do we need LinkedList?
 Many of us are familiar with array as a data structure. An array is an amazing data structure because:
@@ -27,6 +28,8 @@ Many of us are familiar with array as a data structure. An array is an amazing d
 With all these advantages there is one thing that array is not capable of is dynamic in size.
 
 > Arrays are fixed in size.  
+
+![array](images/array.jpeg)
 
 Although you can make a dynamic array like double the size when an array is in an overflow state. But it is not come out of the box especially in low-level languages. Some high-level language does implement dynamic array like Java provides `ArrayList` API and python has `list` API.
 This limitation can be overcome with LinkedList. I think this is the only reason we should need LinkedList. Let understand it by an example, So you are the boss of your company as a boss you need to take care of your employees since you don't know about LinkedList you store the information(Objects of Employee) in an array. Now you can easily access information about your employees, and you are happy.  
@@ -68,3 +71,34 @@ At the hardware level, A Node takes a chunk of heap memory and store data and po
 It is a fancy way of saying that our data structure will work no matter what kind of data you want to store and operate with. for e.g. in the previous we saw that why we need LinkedList, in a similar way what if your business expanded and you need to create new department who deal with shipping of your product in that case you also need to store the worker information who work with the new department. Because you are a Good Boss you need to find a way to store information. So you come with a solution that what if our LinkedList can store both kinds of employee objects. That is Generic Programming. In case you need more information refer to [this](https://en.wikipedia.org/wiki/Generic_programming) link.
 
 ### 5. What are boundary conditions we need to take care of?
+
+There are some boundary conditions we need to take care of while working with LinkedList.
+
+1. Empty data structure
+2. A single element in data structure
+3. Adding and removing from the beginning of data structure
+4. Adding and removing from end of data structure
+5. Working in middle
+
+These boundary conditions are self-explanatory but we will drive deeper when we build our LinkedList.
+
+### 6. How does addFirst() work?
+
+we have our LinkedList that store employee of your company now you want to add a new employee at the beginning of your LinkedList.
+Approach: We could create a new node with the given object and insert that at the beginning of the LinkedList.
+
+```java
+public void addFirst(E obj){  
+    Node<E> node = new Node<E>(obj);  
+    node.next = head;  
+    head = node; 
+}
+```
+
+Now we have to take a look at boundary conditions:
+
+1. **Empty data Structure:** if it is an empty LinkedList then the `head` should point to `null`. Hence out LinkedList only stores one node, `node.next` should be `null`. So our addFirst() method will works.
+2. **A single element in data structure:** if LinkedList contains a single element then the `node.next` should be `head`. So our addFirst() method will works.
+
+rest of the boundary conditions are not related to this method.
+Now talk about complexity, because this is a constant time operation complexity is `O(1)`.
