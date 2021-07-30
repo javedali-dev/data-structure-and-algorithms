@@ -102,3 +102,50 @@ Now we have to take a look at boundary conditions:
 
 rest of the boundary conditions are not related to this method.
 Now talk about complexity, because this is a constant time operation complexity is `O(1)`.
+
+### 7. How does addLast() work?
+Approach: Traverse all the way to check if the current node point to null if it points to null insert our new node after the current node. our code should look like this
+
+```java
+public void addLast(E obj){  
+    Node<E> node = new Node<E>(obj);  
+    Node<E> current= head;  
+    while(current.next!=null){   
+        current= current.next;  
+    }  
+    current.next = node; 
+}
+```
+Now take a look at boundary conditions:
+1. **Empty Data Structure:** Now we have a problem if our LinkedList is empty so our `head` pointer should point to `null` and it will generate `Null Pointer Exception`. To avoid this we have to check if the `head` pointer point to null if it is `null` we just simply insert our node where the `head` is pointing to. So our modified code should look like this,
+
+```java
+public void addLast(E obj){  
+    Node<E> node = new Node<E>(obj);  
+    if(head==null){   
+        head=node;   
+        return   
+    }  
+    Node<E> temp = head;  
+    while(temp.next!=null){   
+        temp = temp.next;  
+    }  
+    temp.next = node; 
+}
+```
+
+The rest of the boundary conditions are not related to this method. Now take a look at time complexity: Since we have to traverse the entire LinkedList it will take O(n) where n is a number of nodes in the LinkedList. Can we do better in terms of time complexity? the answer is **YES**. How? By introducing a tail pointer that points to the last node in our LinkedList. So our modified code should look like this
+
+```java
+public void addLast(E obj){  
+    Node<E> node =  new Node<E>(obj);  
+    if(head==null){   
+       head=tail=node;   
+       return;  
+    }  
+    tail.next=node;  
+    tail=node;  
+    return; 
+}
+```
+So now our time complexity becomes O(1).
