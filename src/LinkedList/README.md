@@ -171,3 +171,29 @@ The above code will handle all the boundary conditions like
 - Empty LinkedList
 - One element in Our LinkedList
 - More than one element
+
+### 9. How does removeLast() work?
+Approach: Travel up to the second last node and break the link between the last node and the second last node. But we have to care about boundary conditions. Boundary conditions are
+- Empty LinkedList
+- Single element
+
+```java
+public E removeLast(){  
+    if(head==null)    
+        return null;  
+    if(head==tail)    
+        return removeFirst();  
+    Node<E> current =head, 
+    previous = null;  
+    while(current!=tail){    
+        previous=current;    
+        current=current.next;  
+    }  
+    previous.next=null;  
+    tail=previous;  
+    return current.data;  
+}
+```
+
+I really want to give attention to line number 5. Line number 4 is only valid if our LinkedList contains a single element.
+In that case, we can call our removeFirst() method. and we now our removeFirst() works very well.
