@@ -149,3 +149,25 @@ public void addLast(E obj){
 }
 ```
 So now our time complexity becomes O(1).
+
+### 8. How does removeFirst() work?
+
+Approach: Take our head pointer and point to the second node in our LinkedList. We can simply achieve this by `head = head.next`; But what if the head point to null i.e Empty LinkedList. So we have to care about boundary condition, let see our code after taken care of all boundary conditions
+
+```java
+public E removeFirst(){  
+    if(head==null)    
+        return null;  
+    E temp = head.data;  
+    if(head==tail)    
+        head=tail=null;  
+    else    
+        head=head.next;   
+    return temp; 
+}
+```
+
+The above code will handle all the boundary conditions like
+- Empty LinkedList
+- One element in Our LinkedList
+- More than one element
