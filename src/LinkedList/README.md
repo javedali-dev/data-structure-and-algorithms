@@ -197,3 +197,37 @@ public E removeLast(){
 
 I really want to give attention to line number 5. Line number 4 is only valid if our LinkedList contains a single element.
 In that case, we can call our removeFirst() method. and we now our removeFirst() works very well.
+
+### 10. How does remove() work?
+Approach: We are going to Take two pointer current and previous. The current pointer is used for traversal through the 
+LinkedList and the previous pointer is to keep track of the previous node to the current node. Once we get the element
+that we want to remove then check for all the boundary conditions. Let see what are the boundary conditions we need to
+take care of,
+- Empty LinkedList
+- One element in LinkedList
+- Remove element middle of our LinkedList
+
+Now let see what our code should look like,
+
+```java
+public E remove(E obj){  
+Node<E> current = head, 
+previous=null;  
+while(current!=null){             
+    if(((Comparable<E>)obj).CompareTo(current.data)==0{      if(current==head){       
+    return removeFirst();       
+}      
+if(current==tail){        
+    return removeLast();      
+}          
+previous.next= current.next;      
+return current.data;    
+}     
+previous=current;    
+current=current.next;  
+}  
+return null;   
+}
+```
+
+The above code will handle all the boundary conditions and give the desired output.
