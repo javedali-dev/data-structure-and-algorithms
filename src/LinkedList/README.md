@@ -256,7 +256,8 @@ public boolen contains(E obj){
 ### 12. Conclusion
 LinkedList is an amazing Data Structure if you are looking for flexibility and dynamic in nature. In the beginning, while 
 you started to learning LinkedList it feels a little intuitive but once you understand the logic of all the common operations 
-it becomes clear to you that what are the steps I need to follow in order to do certain operations.
+it becomes clear to you that what are the steps I need to follow in order to do certain operations.You also can introduce some more operations like peek of LinkedList or keep track of the current size of LinkedList. If you want to look into the entire code you can check it on this [page](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/LinkedList/LinkedList.java).
+
 If still, you have some doubt you can refer to this [playlist](https://www.youtube.com/playlist?list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk) 
 where I mostly learn from.
 See you in the next post.
