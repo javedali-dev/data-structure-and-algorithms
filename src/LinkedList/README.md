@@ -211,22 +211,23 @@ Now let see what our code should look like,
 
 ```java
 public E remove(E obj){  
-Node<E> current = head, 
-previous=null;  
-while(current!=null){             
-    if(((Comparable<E>)obj).CompareTo(current.data)==0{      if(current==head){       
-    return removeFirst();       
-}      
-if(current==tail){        
-    return removeLast();      
-}          
-previous.next= current.next;      
-return current.data;    
-}     
-previous=current;    
-current=current.next;  
-}  
-return null;   
+    Node<E> current = head, 
+    previous=null;  
+    while(current!=null){             
+        if(((Comparable<E>)obj).CompareTo(current.data)==0{
+            if(current==head){       
+                return removeFirst();       
+            }      
+            if(current==tail){        
+                return removeLast();
+            }          
+            previous.next= current.next;      
+            return current.data;    
+        }     
+        previous=current;    
+        current=current.next;  
+    }  
+    return null;   
 }
 ```
 
