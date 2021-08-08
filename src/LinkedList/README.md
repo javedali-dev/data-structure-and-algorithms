@@ -232,3 +232,33 @@ public E remove(E obj){
 ```
 
 The above code will handle all the boundary conditions and give the desired output.
+
+### 11. How does find() work?
+Approach: To find an element in our LinkedList we must have a current element to keep track of our traversal and also to 
+check is it the element we want to search. Once we find that element we just return true. If the element we are searching 
+for is not in our LinkedList we just simply return false.
+
+Let see our code implementation of the above logic,
+
+```java
+public boolen contains(E obj){  
+    Node<E> current = head;  
+    while(current!=null){      
+        if(((Comparable<E>)obj).compareTo(current.data)==0){    
+            return true;   
+        }   
+    current = current.next;  
+    } 
+    return false; 
+}
+```
+
+### 12. Conclusion
+LinkedList is an amazing Data Structure if you are looking for flexibility and dynamic in nature. In the beginning, while 
+you started to learning LinkedList it feels a little intuitive but once you understand the logic of all the common operations 
+it becomes clear to you that what are the steps I need to follow in order to do certain operations.
+If still, you have some doubt you can refer to this [playlist](https://www.youtube.com/playlist?list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk) 
+where I mostly learn from.
+See you in the next post.
+
+Keep learning, :blush:
