@@ -1,4 +1,4 @@
-package BasicProgramming.BasicofImplementation;
+package BasicProgramming.CountDigits;
 
 import java.util.Scanner;
 
