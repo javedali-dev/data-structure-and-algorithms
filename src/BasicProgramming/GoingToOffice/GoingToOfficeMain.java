@@ -22,5 +22,6 @@ public class GoingToOfficeMain {
         else{
             System.out.println("Classic Taxi");
         }
+
     }
 }
