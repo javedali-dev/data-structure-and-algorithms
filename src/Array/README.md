@@ -1,15 +1,15 @@
 ### Questions
 - [X] [1.Reverse the array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/ReverseAnArray.java) 
 - [X] [2.Find the maximum and minimum element in an array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/FindMaxAndMin.java)
-- [X] [3.Find the "Kth" max and min element of an array]() 
-- [X] 4.Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
-- [X] 5.Move all the negative elements to one side of the array 
-- [X] 6.Find the Union and Intersection of the two sorted arrays.
-- [X] 7.Write a program to cyclically rotate an array by one.
-- [X] 8.find Largest sum contiguous Subarray
-- [X] 9.Minimise the maximum difference between heights 
-- [X] 10.Minimum no. of Jumps to reach end of an array
-- [X] 11.find duplicate in an array of N+1 Integers
-- [X] 12.Merge 2 sorted arrays without using Extra space.
-- [X] 13.Kadane's Algo
-- [X] 14.Merge Intervals
+- [X] [3.Find the "Kth" max and min element of an array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/KthSmallestElement.java) 
+- [X] [4.Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/SortZeroOneTwo.java)
+- [X] [5.Move all the negative elements to one side of the array]() 
+- [X] 6.Find the [Union](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/UnionOfArray.java) and [Intersection](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/IntersectionOfTwoArray.java) of the two sorted arrays.
+- [X] [7.Write a program to cyclically rotate an array by one.](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/RotateArray.java)
+- [X] [8.find Largest sum contiguous Sub array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/Kadane.java)
+- [X] [9.Minimise the maximum difference between heights](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MinimizeTheHeights.java) 
+- [X] [10.Minimum no. of Jumps to reach end of an array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MinimumNumberOfJumps.java)
+- [X] [11.find duplicate in an array of N+1 Integers](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/FindTheDuplicate.java)
+- [X] [12.Merge 2 sorted arrays without using Extra space.](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MergeTwoSortedArray.java)
+- [X] [13.Kadane's Algo](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/Kadane.java)
+- [X] [14.Merge Intervals](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MergeInterval.java)
