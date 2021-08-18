@@ -13,3 +13,5 @@
 - [X] [12.Merge 2 sorted arrays without using Extra space.](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MergeTwoSortedArray.java)
 - [X] [13.Kadane's Algo](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/Kadane.java)
 - [X] [14.Merge Intervals](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MergeInterval.java)
+- [ ] 15.Next Permutation
+- [ ] 16.Count Inversions
