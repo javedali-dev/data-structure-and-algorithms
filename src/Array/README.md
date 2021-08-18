@@ -1,7 +1,7 @@
 ### Questions
-- [X] 1.Reverse the array 
-- [X] 2.Find the maximum and minimum element in an array
-- [X] 3.Find the "Kth" max and min element of an array 
+- [X] [1.Reverse the array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/ReverseAnArray.java) 
+- [X] [2.Find the maximum and minimum element in an array](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/FindMaxAndMin.java)
+- [X] [3.Find the "Kth" max and min element of an array]() 
 - [X] 4.Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo
 - [X] 5.Move all the negative elements to one side of the array 
 - [X] 6.Find the Union and Intersection of the two sorted arrays.
