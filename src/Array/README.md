@@ -14,4 +14,7 @@
 - [X] [13.Kadane's Algo](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/Kadane.java)
 - [X] [14.Merge Intervals](https://github.com/javedali-dev/data-structure-and-algorithms/blob/master/src/Array/MergeInterval.java)
 - [ ] 15.Next Permutation
-- [ ] 16.Count Inversions
+- [X] 16.Count Inversions
+- [X] 17.Best time to buy and Sell stock
+- [X] 18.find all pairs on integer array whose sum is equal to given number
+- [X] 19.find common elements In 3 sorted arrays
