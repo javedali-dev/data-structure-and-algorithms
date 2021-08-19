@@ -18,3 +18,4 @@
 - [X] 17.Best time to buy and Sell stock
 - [X] 18.find all pairs on integer array whose sum is equal to given number
 - [X] 19.find common elements In 3 sorted arrays
+- [X] 20.
