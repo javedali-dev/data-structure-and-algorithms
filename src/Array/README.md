@@ -18,4 +18,8 @@
 - [X] 17.Best time to buy and Sell stock
 - [X] 18.find all pairs on integer array whose sum is equal to given number
 - [X] 19.find common elements In 3 sorted arrays
-- [X] 20.
+- [ ] 20.Rearrange the array in alternating positive and negative items with O(1) extra space
+- [ ] 21.Find if there is any sub array with sum equal to 0
+- [ ] 22.Find factorial of a large number
+- [ ] 23.Find maximum product sub array
+- [ ] 24.
