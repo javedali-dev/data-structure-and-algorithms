@@ -22,4 +22,4 @@
 - [ ] 21.Find if there is any sub array with sum equal to 0
 - [ ] 22.Find factorial of a large number
 - [ ] 23.Find maximum product sub array
-- [ ] 24.
+- [ ] 24.Find longest consecutive subsequence
